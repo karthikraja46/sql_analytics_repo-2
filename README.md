@@ -2,12 +2,12 @@
 
 <div align="center">
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+<!-- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-DirectQuery-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![asyncpg](https://img.shields.io/badge/asyncpg-0.29-5C6BC0?style=for-the-badge)
-![pytest](https://img.shields.io/badge/pytest-16_tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-16_tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) -->
 
 **End-to-end analytics pipeline: PostgreSQL stored procedures → FastAPI → live web dashboard + Power BI**
 
