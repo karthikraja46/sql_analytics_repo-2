@@ -1,0 +1,187 @@
+<svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="dbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0d14"/>
+      <stop offset="100%" style="stop-color:#111520"/>
+    </linearGradient>
+    <linearGradient id="rev" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.4"/>
+    </linearGradient>
+    <linearGradient id="pro" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.02"/>
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.3"/>
+    </linearGradient>
+    <filter id="ds"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.5"/></filter>
+    <clipPath id="chartClip"><rect x="0" y="0" width="460" height="160"/></clipPath>
+  </defs>
+
+  <!-- Chrome / window -->
+  <rect width="960" height="560" rx="10" fill="#1a1f2e" stroke="#2d3748" stroke-width="1"/>
+  <!-- titlebar -->
+  <rect width="960" height="38" rx="10" fill="#111520"/>
+  <rect y="28" width="960" height="10" fill="#111520"/>
+  <circle cx="20" cy="19" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="38" cy="19" r="6" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="56" cy="19" r="6" fill="#10b981" opacity="0.8"/>
+  <text x="480" y="24" text-anchor="middle" fill="#475569" font-size="11">SQLDash · Analytics Dashboard · localhost:8080/dashboard.html</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="38" width="180" height="522" fill="#111520" stroke-right="1"/>
+  <rect x="0" y="38" width="180" height="522" fill="none" stroke="#1e2840" stroke-width="0.5"/>
+  <text x="16" y="68" fill="#3b82f6" font-size="14" font-weight="700">SQL<tspan fill="#e2e8f0">Dash</tspan></text>
+  <line x1="0" y1="76" x2="180" y2="76" stroke="#1e2840" stroke-width="0.5"/>
+
+  <!-- Nav items -->
+  <rect x="0" y="84" width="180" height="32" fill="rgba(59,130,246,0.08)"/>
+  <rect x="0" y="84" width="3" height="32" fill="#3b82f6"/>
+  <text x="20" y="105" fill="#3b82f6" font-size="12" font-weight="600">⊞  Overview</text>
+  <text x="20" y="133" fill="#64748b" font-size="12">📦  Products</text>
+  <text x="20" y="161" fill="#64748b" font-size="12">👥  Customers</text>
+  <text x="20" y="189" fill="#64748b" font-size="12">📈  Campaigns</text>
+
+  <!-- Footer status -->
+  <circle cx="20" cy="542" r="4" fill="#10b981"/>
+  <text x="30" y="546" fill="#64748b" font-size="9">API Connected · localhost:8000</text>
+
+  <!-- ── Main Content ── -->
+  <!-- Topbar -->
+  <text x="200" y="66" fill="#e2e8f0" font-size="15" font-weight="700">Executive Overview</text>
+  <text x="200" y="82" fill="#475569" font-size="10">Powered by PostgreSQL stored procedures + mart views</text>
+  <!-- Controls -->
+  <rect x="760" y="52" width="100" height="26" rx="5" fill="#111520" stroke="#1e2840" stroke-width="1"/>
+  <text x="810" y="69" text-anchor="middle" fill="#94a3b8" font-size="10">Last 30 days ▾</text>
+  <rect x="870" y="52" width="72" height="26" rx="5" fill="#3b82f6"/>
+  <text x="906" y="69" text-anchor="middle" fill="white" font-size="10" font-weight="600">↻ Refresh</text>
+
+  <!-- ── KPI Cards ── -->
+  <!-- Revenue -->
+  <rect x="200" y="96" width="172" height="80" rx="8" fill="#111520" stroke="#1e2840" stroke-width="1" filter="url(#ds)"/>
+  <rect x="200" y="96" width="3" height="80" rx="2" fill="#3b82f6"/>
+  <text x="216" y="115" fill="#64748b" font-size="9" font-weight="700" letter-spacing="0.8">GROSS REVENUE</text>
+  <text x="216" y="144" fill="#e2e8f0" font-size="22" font-weight="700" font-family="'Courier New', monospace">₹24.5L</text>
+  <rect x="216" y="155" width="76" height="16" rx="8" fill="rgba(16,185,129,0.15)"/>
+  <text x="254" y="167" text-anchor="middle" fill="#10b981" font-size="9" font-weight="700">↑ 23.7% vs prev</text>
+
+  <!-- Profit -->
+  <rect x="384" y="96" width="172" height="80" rx="8" fill="#111520" stroke="#1e2840" stroke-width="1" filter="url(#ds)"/>
+  <rect x="384" y="96" width="3" height="80" rx="2" fill="#10b981"/>
+  <text x="400" y="115" fill="#64748b" font-size="9" font-weight="700" letter-spacing="0.8">GROSS PROFIT</text>
+  <text x="400" y="144" fill="#e2e8f0" font-size="22" font-weight="700" font-family="'Courier New', monospace">₹7.3L</text>
+  <rect x="400" y="155" width="76" height="16" rx="8" fill="rgba(16,185,129,0.15)"/>
+  <text x="438" y="167" text-anchor="middle" fill="#10b981" font-size="9" font-weight="700">↑ 20.1% vs prev</text>
+
+  <!-- Orders -->
+  <rect x="568" y="96" width="172" height="80" rx="8" fill="#111520" stroke="#1e2840" stroke-width="1" filter="url(#ds)"/>
+  <rect x="568" y="96" width="3" height="80" rx="2" fill="#f59e0b"/>
+  <text x="584" y="115" fill="#64748b" font-size="9" font-weight="700" letter-spacing="0.8">TOTAL ORDERS</text>
+  <text x="584" y="144" fill="#e2e8f0" font-size="22" font-weight="700" font-family="'Courier New', monospace">3,240</text>
+  <rect x="584" y="155" width="76" height="16" rx="8" fill="rgba(16,185,129,0.15)"/>
+  <text x="622" y="167" text-anchor="middle" fill="#10b981" font-size="9" font-weight="700">↑ 12.8% vs prev</text>
+
+  <!-- Customers -->
+  <rect x="752" y="96" width="190" height="80" rx="8" fill="#111520" stroke="#1e2840" stroke-width="1" filter="url(#ds)"/>
+  <rect x="752" y="96" width="3" height="80" rx="2" fill="#06b6d4"/>
+  <text x="768" y="115" fill="#64748b" font-size="9" font-weight="700" letter-spacing="0.8">UNIQUE CUSTOMERS</text>
+  <text x="768" y="144" fill="#e2e8f0" font-size="22" font-weight="700" font-family="'Courier New', monospace">1,420</text>
+  <rect x="768" y="155" width="76" height="16" rx="8" fill="rgba(16,185,129,0.15)"/>
+  <text x="806" y="167" text-anchor="middle" fill="#10b981" font-size="9" font-weight="700">↑ 20.3% vs prev</text>
+
+  <!-- ── Revenue Chart ── -->
+  <rect x="200" y="192" width="490" height="196" rx="8" fill="#111520" stroke="#1e2840" stroke-width="1"/>
+  <text x="216" y="212" fill="#e2e8f0" font-size="12" font-weight="600">Daily Revenue vs Profit</text>
+  <text x="216" y="226" fill="#475569" font-size="10">Rolling 90-day window · mart.v_daily_revenue</text>
+  <!-- Fake chart lines -->
+  <g clip-path="url(#chartClip)" transform="translate(204,234)">
+    <!-- Revenue area -->
+    <path d="M0,100 C20,90 40,80 60,70 C80,60 90,75 110,55 C130,35 150,65 170,45 C190,25 210,55 230,40 C250,25 270,50 290,30 C310,15 330,35 350,20 C370,5 390,25 410,10 C430,0 450,15 460,8 L460,160 L0,160Z" fill="url(#rev)" stroke="none"/>
+    <path d="M0,100 C20,90 40,80 60,70 C80,60 90,75 110,55 C130,35 150,65 170,45 C190,25 210,55 230,40 C250,25 270,50 290,30 C310,15 330,35 350,20 C370,5 390,25 410,10 C430,0 450,15 460,8" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <!-- Profit area -->
+    <path d="M0,130 C20,125 40,118 60,112 C80,106 90,115 110,104 C130,93 150,110 170,100 C190,90 210,105 230,96 C250,87 270,100 290,88 C310,76 330,90 350,80 C370,70 390,82 410,74 C430,66 450,78 460,70 L460,160 L0,160Z" fill="url(#pro)" stroke="none"/>
+    <path d="M0,130 C20,125 40,118 60,112 C80,106 90,115 110,104 C130,93 150,110 170,100 C190,90 210,105 230,96 C250,87 270,100 290,88 C310,76 330,90 350,80 C370,70 390,82 410,74 C430,66 450,78 460,70" fill="none" stroke="#10b981" stroke-width="1.5"/>
+  </g>
+  <!-- Legend -->
+  <line x1="580" y1="214" x2="596" y2="214" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="218" fill="#94a3b8" font-size="10">Revenue</text>
+  <line x1="648" y1="214" x2="664" y2="214" stroke="#10b981" stroke-width="2"/>
+  <text x="668" y="218" fill="#94a3b8" font-size="10">Profit</text>
+  <!-- Y axis labels -->
+  <text x="210" y="245" fill="#475569" font-size="9">₹50L</text>
+  <text x="210" y="295" fill="#475569" font-size="9">₹25L</text>
+  <text x="210" y="345" fill="#475569" font-size="9">₹0</text>
+  <!-- X axis labels -->
+  <text x="230" y="385" fill="#475569" font-size="9">Dec</text>
+  <text x="350" y="385" fill="#475569" font-size="9">Jan</text>
+  <text x="470" y="385" fill="#475569" font-size="9">Feb</text>
+  <text x="590" y="385" fill="#475569" font-size="9">Mar</text>
+  <!-- Gridlines -->
+  <line x1="228" y1="242" x2="688" y2="242" stroke="#1e2840" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="228" y1="292" x2="688" y2="292" stroke="#1e2840" stroke-width="0.5" stroke-dasharray="3,4"/>
+  <line x1="228" y1="342" x2="688" y2="342" stroke="#1e2840" stroke-width="0.5" stroke-dasharray="3,4"/>
+
+  <!-- ── Channel Donut ── -->
+  <rect x="704" y="192" width="238" height="196" rx="8" fill="#111520" stroke="#1e2840" stroke-width="1"/>
+  <text x="720" y="212" fill="#e2e8f0" font-size="12" font-weight="600">Channel Mix</text>
+  <text x="720" y="226" fill="#475569" font-size="10">Last 6 months</text>
+  <!-- Donut chart -->
+  <circle cx="823" cy="305" r="58" fill="none" stroke="#1e2840" stroke-width="1"/>
+  <!-- Web slice ~45% -->
+  <path d="M823,247 A58,58 0 0,1 868,335" fill="none" stroke="#3b82f6" stroke-width="22" stroke-dasharray="130 280"/>
+  <!-- Mobile ~32% -->
+  <path d="M823,247 A58,58 0 0,1 823,363" fill="none" stroke="#06b6d4" stroke-width="22" stroke-dasharray="90 280" stroke-dashoffset="-130"/>
+  <!-- Store ~14% -->
+  <path d="M823,247 A58,58 0 0,1 770,345" fill="none" stroke="#10b981" stroke-width="22" stroke-dasharray="40 280" stroke-dashoffset="-220"/>
+  <!-- Partner -->
+  <path d="M823,247 A58,58 0 0,1 781,260" fill="none" stroke="#f59e0b" stroke-width="22" stroke-dasharray="20 280" stroke-dashoffset="-260"/>
+  <circle cx="823" cy="305" r="36" fill="#111520"/>
+  <text x="823" y="300" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="700">₹98L</text>
+  <text x="823" y="315" text-anchor="middle" fill="#475569" font-size="9">revenue</text>
+  <!-- Legend -->
+  <circle cx="720" cy="360" r="4" fill="#3b82f6"/>
+  <text x="728" y="364" fill="#94a3b8" font-size="9">Web 45%</text>
+  <circle cx="775" cy="360" r="4" fill="#06b6d4"/>
+  <text x="783" y="364" fill="#94a3b8" font-size="9">Mobile 32%</text>
+  <circle cx="720" cy="378" r="4" fill="#10b981"/>
+  <text x="728" y="382" fill="#94a3b8" font-size="9">Store 14%</text>
+  <circle cx="775" cy="378" r="4" fill="#f59e0b"/>
+  <text x="783" y="382" fill="#94a3b8" font-size="9">Partner 9%</text>
+
+  <!-- ── Monthly Table ── -->
+  <rect x="200" y="402" width="742" height="136" rx="8" fill="#111520" stroke="#1e2840" stroke-width="1"/>
+  <rect x="200" y="402" width="742" height="32" rx="8" fill="#0f172a"/>
+  <rect x="200" y="420" width="742" height="14" rx="0" fill="#0f172a"/>
+  <text x="216" y="422" fill="#e2e8f0" font-size="11" font-weight="600">Monthly KPIs · mart.mv_monthly_kpis</text>
+  <text x="808" y="422" fill="#475569" font-size="9" font-style="italic">Materialised view · refreshed hourly</text>
+  <line x1="200" y1="434" x2="942" y2="434" stroke="#1e2840" stroke-width="1"/>
+  <!-- Table header -->
+  <text x="216" y="450" fill="#475569" font-size="9" font-weight="700" letter-spacing="0.8">MONTH</text>
+  <text x="320" y="450" fill="#475569" font-size="9" font-weight="700" letter-spacing="0.8">ORDERS</text>
+  <text x="420" y="450" fill="#475569" font-size="9" font-weight="700" letter-spacing="0.8">CUSTOMERS</text>
+  <text x="540" y="450" fill="#475569" font-size="9" font-weight="700" letter-spacing="0.8">REVENUE</text>
+  <text x="680" y="450" fill="#475569" font-size="9" font-weight="700" letter-spacing="0.8">PROFIT</text>
+  <text x="810" y="450" fill="#475569" font-size="9" font-weight="700" letter-spacing="0.8">MARGIN %</text>
+  <line x1="200" y1="456" x2="942" y2="456" stroke="#1e2840" stroke-width="0.5"/>
+  <!-- Row 1 -->
+  <text x="216" y="472" fill="#94a3b8" font-family="monospace" font-size="10">2025-02</text>
+  <text x="320" y="472" fill="#94a3b8" font-size="10">298</text>
+  <text x="420" y="472" fill="#94a3b8" font-size="10">149</text>
+  <text x="540" y="472" fill="#3b82f6" font-size="10">₹7,20,000</text>
+  <text x="680" y="472" fill="#10b981" font-size="10">₹2,16,000</text>
+  <text x="810" y="472" fill="#94a3b8" font-size="10">30.0%</text>
+  <!-- Row 2 -->
+  <text x="216" y="490" fill="#94a3b8" font-family="monospace" font-size="10">2025-01</text>
+  <text x="320" y="490" fill="#94a3b8" font-size="10">280</text>
+  <text x="420" y="490" fill="#94a3b8" font-size="10">140</text>
+  <text x="540" y="490" fill="#3b82f6" font-size="10">₹6,65,000</text>
+  <text x="680" y="490" fill="#10b981" font-size="10">₹1,99,500</text>
+  <text x="810" y="490" fill="#94a3b8" font-size="10">30.0%</text>
+  <!-- Row 3 -->
+  <text x="216" y="508" fill="#94a3b8" font-family="monospace" font-size="10">2024-12</text>
+  <text x="320" y="508" fill="#94a3b8" font-size="10">262</text>
+  <text x="420" y="508" fill="#94a3b8" font-size="10">131</text>
+  <text x="540" y="508" fill="#3b82f6" font-size="10">₹6,10,000</text>
+  <text x="680" y="508" fill="#10b981" font-size="10">₹1,83,000</text>
+  <text x="810" y="508" fill="#94a3b8" font-size="10">30.0%</text>
+  <line x1="200" y1="516" x2="942" y2="516" stroke="#1e2840" stroke-width="0.5" stroke-dasharray="2,4"/>
+  <text x="480" y="530" text-anchor="middle" fill="#475569" font-size="9" font-style="italic">…8 months displayed</text>
+</svg>
